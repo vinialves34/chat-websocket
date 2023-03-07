@@ -9,7 +9,7 @@ const app = express();
 
 const server = createServer(app);
 
-mongoose.connect("mongodb://localhost/chatsocket");
+mongoose.connect("mongodb://mongodb:27017/chatsocket");
 
 app.use(express.static(path.join(__dirname, "..", "public")));
 
